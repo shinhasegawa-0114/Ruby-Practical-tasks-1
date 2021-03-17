@@ -6,8 +6,9 @@ number = gets.chomp.to_i
 
 if number == 1
     puts "拡張子を除いた新規ファイル名を入力して下さい"
-else number == 2
+elsif number == 2
     puts "拡張子を除いた既存ファイル名を入力して下さい"
+#どの条件にも一致しなかった場合の処理を指定するには else
 end
 
 
@@ -35,7 +36,8 @@ text1 = Text.new
 
 if number == 1
     text1.new_text(file_name, comment)
-else number == 2
+elsif number == 2
     text1.continu_text(file_name, comment)
+#どの条件にも一致しなかった場合の処理を指定するには else
 end
 
